@@ -1,0 +1,34 @@
+//this is a partial- so the file name starts with -
+//contains all variables and mixins
+$primary-color: rgb(27, 27, 27);
+$secondary-color: #257070;
+$show-home-img: true;
+$home-img: url(../img/background.jpg);
+$background-opacity: 0.8;
+
+@mixin easeOut {
+  transition: all 0.75s ease-out;
+}
+
+@mixin background {
+  @if $show-home-img {
+    &#bg-img {
+      //shows the background image with computer
+      //future: fix so that the image is a randomly generated project image
+      background: $home-img;
+      background-attachment: fixed;
+      background-size: cover;
+
+      .overlay {
+        //adds an overlay
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        background: rgba($primary-color, $background-opacity);
+      }
+    }
+  }
+}

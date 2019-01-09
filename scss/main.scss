@@ -1,10 +1,72 @@
-$primary-color: #444;
-
+@import "_config";
+@import "_menu";
 * {
   box-sizing: border-box;
   /*makes sure that the sizing doesn't get messed up by padding px*/
 }
+
 body {
+  @include background;
   background: $primary-color;
+  color: rgb(255, 255, 255);
+  height: 100%;
+  margin: 0px;
+  line-height: 1.5;
+  font-family: "Segoe UI", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+h1,
+h2,
+h3 {
+  margin: 0px;
+  font-weight: 400;
+  &.lg-heading {
+    font-size: 6rem;
+  }
+
+  &.sm-heading {
+    margin-bottom: 2rem;
+    padding: 0.2rem 0.1rem;
+    //0.5 is the opacity so that images can be seen from behind
+    background: rgba(lighten($primary-color, 2), 0.5);
+  }
+}
+a {
   color: #fff;
+  text-decoration: none;
+}
+
+header {
+  position: fixed;
+  z-index: 2;
+}
+
+.text-secondary {
+  color: $secondary-color;
+}
+
+main {
+  padding: 4rem;
+  height: 100%;
+  &#home {
+    //will never have scroll bars on main page
+    overflow: hidden;
+    h1 {
+      margin-top: 20vh;
+    }
+  }
+  //a is a type not a class so no . at front
+  .icons {
+    a {
+      padding: 5px;
+
+      &:hover {
+        //fade in
+        //transition: background .2s ease-in.
+        color: $secondary-color;
+        //all means that all the transitions happen
+        //puting color in place of all would be the same
+        @include easeOut();
+      }
+    }
+  }
 }
