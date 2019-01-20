@@ -10,7 +10,7 @@
     height: 3px;
     width: 30px;
     margin: 0 0 5px 0;
-    background: white;
+    background: black;
     transition: all 0.75s ease-out; }
   .menu-btn.close {
     transform: rotate(180deg); }
@@ -40,14 +40,14 @@
   .menu-nav {
     margin: 0;
     padding: 0;
-    background: #060606;
+    background: #e3e3e3;
     list-style: none;
     transform: translate3d(0, 100%, 0);
     transition: all 0.75s ease-out; }
     .menu-nav.show {
       transform: translate3d(0, 0, 0); }
   .menu-branding {
-    background: #131313;
+    background: #f0f0f0;
     transform: translate3d(0, -100%, 0);
     transition: all 0.75s ease-out; }
     .menu-branding.show {
@@ -57,14 +57,14 @@
       height: 225px;
       background: url("../img/portrait.jpg");
       border-radius: 50%;
-      border: solid 3px #257070; }
+      border: solid 3px #125277; }
   .menu .nav-item {
     transform: translate3d(600px, 0, 0);
     transition: all 0.75s ease-out; }
     .menu .nav-item.show {
       transform: translate3d(0, 0, 0); }
     .menu .nav-item.current > a {
-      color: #257070; }
+      color: #125277; }
   .menu .nav-link {
     display: inline-block;
     position: relative;
@@ -72,11 +72,11 @@
     text-transform: uppercase;
     padding: 1rem 0;
     font-weight: 400;
-    color: set-text-color(#131313);
+    color: set-text-color(#f0f0f0);
     text-decoration: none;
     transition: all 0.75s ease-out; }
     .menu .nav-link:hover {
-      color: #257070; }
+      color: #125277; }
 
 .nav-item:nth-child(1) {
   transition-delay: 0.1s; }
@@ -95,8 +95,8 @@
   /*makes sure that the sizing doesn't get messed up by padding px*/ }
 
 body {
-  background: #131313;
-  color: white;
+  background: #f0f0f0;
+  color: black;
   height: 100%;
   margin: 0px;
   line-height: 1.5;
@@ -112,7 +112,7 @@ body {
       width: 100%;
       height: 100%;
       z-index: -1;
-      background: rgba(19, 19, 19, 0.8); }
+      background: rgba(240, 240, 240, 0.8); }
 
 h1,
 h2,
@@ -128,7 +128,7 @@ h3 {
   h3.sm-heading {
     margin-bottom: 2rem;
     padding: 0.2rem 0.1rem;
-    background: rgba(24, 24, 24, 0.5); }
+    background: rgba(245, 245, 245, 0.5); }
 
 a {
   color: #fff;
@@ -139,7 +139,7 @@ header {
   z-index: 2; }
 
 .text-secondary {
-  color: #257070; }
+  color: #125277; }
 
 main {
   padding: 4rem;
@@ -151,7 +151,7 @@ main {
   main .icons a {
     padding: 5px; }
     main .icons a:hover {
-      color: #257070;
+      color: #125277;
       transition: all 0.75s ease-out; }
 
 .project-info {
@@ -177,8 +177,8 @@ main {
 
 .project {
   padding: 2rem;
-  background-color: #202020;
-  border-bottom: #257070 2px solid;
+  background-color: #fdfdfd;
+  border-bottom: #125277 2px solid;
   margin-bottom: 30px; }
   .project img {
     width: 100%;
@@ -187,12 +187,12 @@ main {
     height: 30vh; }
   .project:hover {
     opacity: 0.5;
-    border-color: #257070;
+    border-color: #125277;
     transition: all 0.75s ease-out; }
 
 .entry {
   padding: 2rem;
-  background: #202020; }
+  background: #fdfdfd; }
   .entry:hover {
     opacity: 0.5; }
 
