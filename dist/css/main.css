@@ -180,6 +180,21 @@ main {
   background-color: #202020;
   border-bottom: #257070 2px solid;
   margin-bottom: 30px; }
+  .project img {
+    width: 100%;
+    border: 3px white solid;
+    margin-top: 20px;
+    height: 30vh; }
+  .project:hover {
+    opacity: 0.5;
+    border-color: #257070;
+    transition: all 0.75s ease-out; }
+
+.entry {
+  padding: 2rem;
+  background: #202020; }
+  .entry:hover {
+    opacity: 0.5; }
 
 @media screen and (max-width: 768px) {
   main {
