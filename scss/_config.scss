@@ -1,10 +1,10 @@
 //this is a partial- so the file name starts with -
 //contains all variables and mixins
-$primary-color: rgb(15, 15, 15);
+$primary-color: rgb(192, 192, 192);
 $secondary-color: #125277;
 $show-home-img: true;
-$home-img: url(../img/background.jpg);
-$background-opacity: 0.8;
+$home-img: url(../img/background5.png);
+$background-opacity: 0;
 
 @mixin easeOut {
   transition: all 0.75s ease-out;
@@ -16,6 +16,7 @@ $background-opacity: 0.8;
       //shows the background image with computer
       //future: fix so that the image is a randomly generated project image
       background: $home-img;
+      height: 100vh;
       background-attachment: fixed;
       background-size: cover;
 
