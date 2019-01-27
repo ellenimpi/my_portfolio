@@ -1,13 +1,13 @@
 //this is a partial- so the file name starts with -
 //contains all variables and mixins
-$primary-color: rgb(192, 192, 192);
+$primary-color: rgb(255, 255, 255);
 $secondary-color: #125277;
 $show-home-img: true;
 $home-img: url(../img/background5.png);
 $background-opacity: 0;
 
 @mixin easeOut {
-  transition: all 0.75s ease-out;
+  transition: all 0.5s ease-out;
 }
 
 @mixin background {
@@ -35,6 +35,7 @@ $background-opacity: 0;
 }
 
 //Mixins can't return - we need functions for that
+/*
 @function set-color-text($color) {
   @if (lightness($color) > 40) {
     @return black;
@@ -42,6 +43,7 @@ $background-opacity: 0;
     @return white;
   }
 }
+*/
 
 //Media Query Mixins
 @mixin mediaSm {
